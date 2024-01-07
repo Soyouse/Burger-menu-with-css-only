@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(29, 21, 10);
+}
+
+.nav_bar {
+    position: relative;
+    background-color: #2c2c2c;
+    height: 5em;
+}
+
+#menu_burger {
+    position: absolute;
+    top: 40%;
+    left: 1.8%;
+    visibility: hidden;
+}
+
+label {
+    position: absolute;
+    top: 22%;
+    left: 0.8%;
+}
+
+
+.menu li{
+    position: relative;
+    height: 6em;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-size: xx-large;
+    margin-top: 1.6%;
+    margin-left: 40%;
+    display: inline-block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#menu_burger:checked + .menu {
+    display: block;
+    background-color: #2c2c2c;
+}
+
+.menu li.li_custom::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 100%;
+    top: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
